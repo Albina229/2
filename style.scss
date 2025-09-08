@@ -1,8 +1,12 @@
-$colorSelectSite: #1E1E1E;
-$widthSite: 1320px;
-$backBlock:#84fa88;
-$Colortext: #4D4D4D;
-$thirdSite:
+@import 'vars';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
 a {
     text-decoration: none;
 }
@@ -37,6 +41,22 @@ padding-right: calc(50% - $widthSite / 2);
 }
 
 
+.filter-sort{
+    padding-top: 5px;
+    position: relative;
+}
+
+.filter{
+    padding: 13px 16px 16px;
+    width: 325px;
+    position: absolute;
+    box-sizing: border-box;
+&_summary{
+    display: flex;
+    align-items: center;
+    gap: 11pp;
+
+}
 
 .top-head__heading{
 font-style: normal;
@@ -75,15 +95,3 @@ padding: 12px;
  .product__price{
   padding-left: 85px;
 }
-}
-
-
-
-
-
-
-
-
-
-
-
