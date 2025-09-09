@@ -14,26 +14,17 @@ a {
 }
 
 .header_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 100px;
 }
 
 .top-head {
   padding-top: 21px;
   padding-bottom: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .body {
@@ -41,8 +32,8 @@ a {
 }
 
 .center {
-  padding-left: calc(50% - $widthSite / 2);
-  padding-right: calc(50% - $widthSite / 2);
+  padding-left: calc(50% - 660px);
+  padding-right: calc(50% - 660px);
 }
 
 .filter-sort {
@@ -54,17 +45,22 @@ a {
   padding: 13px 16px 16px;
   width: 325px;
   position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
+.filter[open] {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px #c7c7c7;
+  border: 1px solid #E6E6E6;
+}
+.filter[open] .filter_heading {
+  color: #1E1E1E;
+}
+.filter[open] path {
+  fill: #1E1E1E;
+}
 .filter_summary {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 11pp;
 }
 
@@ -97,16 +93,15 @@ a {
   padding-left: 140px;
 }
 
-.product .product__content {
+.product__content {
   background-color: #e9e9e9;
   padding: 12px;
 }
 
-.product .product__name {
+.product__name {
   padding-left: 50px;
 }
 
-.product .product__price {
+.product__price {
   padding-left: 85px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
