@@ -19,6 +19,25 @@ a {
   gap: 100px;
 }
 
+#burger {
+  position: absolute;
+  right: -9999px;
+  visibility: hidden;
+}
+
+#burger:checked ~ .nav {
+  display: none;
+}
+
+.nav {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  width: 312px;
+  padding: 32px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
 .top-head {
   padding-top: 21px;
   padding-bottom: 21px;
