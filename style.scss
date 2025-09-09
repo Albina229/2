@@ -49,7 +49,7 @@ padding-right: calc(50% - $widthSite / 2);
 .filter{
  &[open]{
 background: #FFFFFF;
-box-shadow: 6px 4px 35px #c7c7c7 ;
+box-shadow: 6px 4px 35px #313131 ;
 border: 1px solid #E6E6E6;
 }
     &[open] .filter_heading {
@@ -58,8 +58,9 @@ border: 1px solid #E6E6E6;
     &[open] path {
     fill: $colorSelectSite;
 }
+
     padding: 13px 16px 16px;
-    width: 325px;
+    width: 350px;
     position: absolute;
     box-sizing: border-box;
 
@@ -67,6 +68,10 @@ border: 1px solid #E6E6E6;
     display: flex;
     align-items: center;
     gap: 11pp;
+   
+   &_item{
+margin-top: 16px;
+   } 
 }
 
 }
